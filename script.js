@@ -54,8 +54,7 @@ const assignmentData = {
         summary: "For this assignment, I analyzed Sherlock Holmes and his 'science of deduction.' I explained that his method involves extreme observation of minute details—like the dirt on a shoe—to infer large truths about a person. I identified his strength as his ability to link unrelated data points, but I pointed out a weakness: he often claims certainty based on incomplete data, when he should probably leave room for error.",
         reflection: "I connected this assignment to the 'Research Genre Production' and 'Generating Inquiry' outcomes. It was a fun way to think about what 'methodology' actually means. In class, we talk about surveys and textual analysis, which can be dry. But analyzing Sherlock Holmes made me realize that a methodology is just a systematic way of answering a question.\n\nMy process was fun but analytical. I had to critique a character I usually admire. When I wrote that Holmes should 'allow for more uncertainty,' I realized I was applying the same standard to him that I have to apply to my own research. In my final paper, I couldn't just say 'commit messages prove X.' I had to be careful and say 'this data suggests X.' This assignment helped me understand the importance of acknowledging limitations in research. It showed me that even geniuses like Holmes are essentially just doing research, and like all research, it has flaws that need to be accounted for.",
         link: "https://docs.google.com/document/d/1_SyBaeyj_2h0UW9SfenA-acwvA5LbVp39aTQgRo3iVo/edit?usp=sharing"
-    },
-    "link": "https://docs.google.com/viewer?url=your-placeholder-url.pdf" // Placeholder link for buttons
+    }
 };
 
 // Modal Logic
@@ -82,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 modalDesc.textContent = data.description;
                 modalSummary.textContent = data.summary;
                 modalReflection.innerText = data.reflection; // Use innerText to preserve newlines
-                modalLink.setAttribute('href', assignmentData.link);
+                modalLink.setAttribute('href', data.link);
 
                 // Show modal
                 modal.style.display = 'block';
